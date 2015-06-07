@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  
+  <definition name="common" template="/WEB-INF/layouts/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+  </definition>
+  
+  <definition name="index" extends = "common">
+    <put-attribute name="title" value="Faculty System" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="index" cascade = "true"/>
+  </definition>
+
+ <definition name="users" extends = "common">
+    <put-attribute name="title" value="Users" />
+    <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+    <put-attribute name="current" value = "users"/>
+  </definition>	
+		
+<definition name="groups" extends = "common">
+    <put-attribute name="title" value="Groups" />
+    <put-attribute name="body" value="/WEB-INF/jsp/groups.jsp" />
+    <put-attribute name="current" value = "groups"/>
+  </definition>			
+	
+<definition name="teachers" extends = "common">
+    <put-attribute name="title" value="Teachers" />
+    <put-attribute name="body" value="/WEB-INF/jsp/teachers.jsp" />
+    <put-attribute name="current" value = "teachers"/>
+  </definition>			
+			
+<definition name="lessons" extends = "common">
+    <put-attribute name="title" value="Lessons" />
+    <put-attribute name="body" value="/WEB-INF/jsp/lessons.jsp" />
+    <put-attribute name="current" value = "lessons"/>
+  </definition>			
+
+<definition name="pairs" extends = "common">
+    <put-attribute name="title" value="Pairs" />
+    <put-attribute name="body" value="/WEB-INF/jsp/pairs.jsp" />
+    <put-attribute name="current" value = "pairs"/>
+  </definition>
+
+<definition name="schedule" extends = "common">
+    <put-attribute name="title" value="Schedule" />
+    <put-attribute name="body" value="/WEB-INF/jsp/schedule.jsp" />
+    <put-attribute name="current" value = "pairs"/>
+  </definition>
+
+				
+<definition name="user-register" extends = "common">
+    <put-attribute name="title" value="Registration" />
+    <put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+    <put-attribute name="current" value = "register"/>
+  </definition>			
+
+<definition name="add-group" extends = "common">
+    <put-attribute name="title" value="Add new group" />
+    <put-attribute name="body" value="/WEB-INF/jsp/add-group.jsp" />
+    <put-attribute name="current" value = "add-group"/>
+</definition>			
+
+<definition name="add-lesson" extends = "common">
+    <put-attribute name="title" value="Add new lesson" />
+    <put-attribute name="body" value="/WEB-INF/jsp/add-lesson.jsp" />
+    <put-attribute name="current" value = "add-lesson"/>
+</definition>									
+
+<definition name="add-teacher" extends = "common">
+    <put-attribute name="title" value="Add new teacher" />
+    <put-attribute name="body" value="/WEB-INF/jsp/add-teacher.jsp" />
+    <put-attribute name="current" value = "add-teacher"/>
+</definition>
+
+<definition name="login" extends = "common">
+    <put-attribute name="title" value="login" />
+    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    <put-attribute name="current" value = "login"/>
+</definition>
+				
+</tiles-definitions>

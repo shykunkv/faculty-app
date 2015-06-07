@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="faculty-app">
+		<class>ua.shykun.jba.entity.User</class>
+		<class>ua.shykun.jba.entity.Role</class>
+		<class>ua.shykun.jba.entity.Teacher</class>
+		<class>ua.shykun.jba.entity.Group</class>
+		<class>ua.shykun.jba.entity.Lesson</class>
+		<class>ua.shykun.jba.entity.Schedule</class>
+		<class>ua.shykun.jba.entity.Pair</class>
+	</persistence-unit>
+</persistence>

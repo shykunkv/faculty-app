@@ -1,0 +1,22 @@
+<taglib>
+<tlib-version>1.0</tlib-version>
+<jsp-version>2.0</jsp-version>
+<short-name>My Custom Tag: MyMsg</short-name>
+<tag>
+	<name>MyMsg</name>
+	<tag-class>ua.shykun.jba.service.MyTag</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+      <name>data</name>
+      <type>ua.shykun.jba.ScheduleService</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+      <name>pairs</name>
+      <type>ua.shykun.jba.entity.Pair</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+  </attribute>
+</tag>
+</taglib>
